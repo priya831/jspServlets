@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+table,tr,th,td{
+border: 1px solid black;
+}
+</style>
+
+<table>
+  <tr>
+    <th>TICKER</th>
+    <th>PRICE</th> 
+  </tr>
+  <tr>
+    <td>WIPRO</td>
+    <td>298.45</td>
+  </tr>
+  <tr>
+    <td>INFY</td>
+    <td>949.95</td>
+  </tr>
+  <tr>
+    <td>TCS</td>
+    <td>2713.70</td>
+  </tr>
+  <tr>
+    <td>TECHM</td>
+    <td>485.85</td>
+  </tr>
+</table>
+
+<h1>Stock Trading</h1>
+<form method="get">
+<table>
+
+  <tr>
+    <td>Ticker:</td>
+    <td><input type="text" name="ticker" required></td>
+  </tr>
+  <tr>
+    <td>Quantity</td>
+    <td><input type="number" name="quant" min="10" max="100" step="10" required></td>
+  </tr>
+  <tr>
+    <td><button type="Submit">Submit</td>
+    
+  </tr>
+</table>
+</form>
+</body>
+</html>

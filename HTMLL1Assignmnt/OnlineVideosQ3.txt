@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  color: white;
+}
+
+.split {
+  height: 50%;
+  width: 100%;
+  position: fixed;
+}
+
+.top {
+  top: 0;
+  background-color: #111;
+}
+
+.bottom {
+  bottom: 0;
+  background-color: red;
+}
+
+.centered {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.play-button {
+  position: absolute;
+  top: 10%;
+  left: 45%;
+}
+
+.pause-button {
+  position: absolute;
+  top: 10%;
+  right: 45%;
+}
+
+.video {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+}
+
+.image {
+  position: absolute;
+  top: 40%;
+  left: 47%;
+}
+
+</style>
+</head>
+<body>
+
+<div id="top" class="split top">
+<h2 class="centered">Awesome Online Videos</h2>
+<img src="https://img.freepik.com/free-vector/logo-template-design_1289-24.jpg?size=338&ext=jpg" alt="Online Video Logo" height="100" width="100" class="image">
+</div>
+
+<div id="bottom" class="split bottom">
+<button onclick="playVid()" type="button" class="play-button">Play</button>
+<button onclick="pauseVid()" type="button" class="pause-button">Pause</button><br> 
+
+<video id="myVideo" width="300" height="150" class="video">
+  <source src="https://www.w3schools.com/tags/mov_bbb.mp4" type="video/mp4">
+</video>
+
+<script> 
+var vid = document.getElementById("myVideo"); 
+
+function playVid() { 
+  vid.play(); 
+} 
+
+function pauseVid() { 
+  vid.pause(); 
+} 
+</script> 
+</div>
+
+     
+</body>
+</html> 
